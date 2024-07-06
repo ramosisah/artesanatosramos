@@ -1,0 +1,126 @@
+.body {
+    background-color: rgb(236, 209, 176);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [inicio] 30% [f-primaria i-principal] 40% [f-principal i-secundaria] 30% [fim];
+    grid-template-rows: [inicio] 150px [f-topo i-menu] 80px [f-menu i-3col] 500px [f-3col i-rodape] 200px [fim];
+    background-color: antiquewhite;
+}
+
+.topo {
+    grid-area: inicio / inicio / f-topo / fim;
+    background-color: #FDDFBE;
+}
+
+.logo {
+    display: block;
+    margin: auto
+}
+
+.menu {
+    grid-area: i-menu / inicio / f-menu / fim;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    color:rgb(92, 28, 28);
+    background-color: antiquewhite;
+    border: 2px solid rgb(187, 138, 98);
+
+}
+
+.principal {
+    grid-area: i-3col / i-principal / f-3col / f-principal;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+
+.primaria {
+    grid-area: i-3col / inicio / f-3col / f-primaria;
+    margin-top: 50px;
+}
+
+.secundaria {
+    grid-area: i-3col / i-secundaria / f-3col / fim;
+    margin-top: 50px;
+}
+
+.rodape { 
+    grid-area: i-rodape / inicio / fim / fim;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+    color:rgb(92, 28, 28);
+    background-color: antiquewhite;
+    border: 2px solid rgb(187, 138, 98);
+}
+
+.bordado1 {
+    animation-name: diversao;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes diversao {
+    from {
+        margin-top: 100%;
+        height: 0%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 80%;
+    }
+}
+
+.bordado2 {
+    animation-name: diversao1;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes diversao1 {
+    from {
+        margin-bottom: 100%;
+        height: 0%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        height: 80%;
+    }
+}
+
+.bordado3 {
+    animation-name: diversao2;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes diversao2 {
+    from {
+        margin-bottom: 100%;
+        height: 0%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        height: 80%;
+    }
+}
+
+input {
+    color: rgb(14, 3, 3);
+    background-color: bisque;
+    border: 2px solid rgba(46, 22, 5, 0.753) ;
+    box-shadow: 2px 3px 2px rgb(110, 94, 94);
+}
+
+.botao {
+    background-color: rgb(58, 17, 17);
+    color: antiquewhite;
+}
+
